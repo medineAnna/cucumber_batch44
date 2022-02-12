@@ -23,3 +23,4 @@ Feature: US1009 Scenario Outline ile editor database sayfasina kayit
     Examples:
       |firstname|lastname|position|office|extension|startDate|salary|
       |mehmet   |bulutlu |amele   |amsterdam|amele |2020-01-01|200  |
+    |Zehra |Nazli | tester | istanbul |Po|2021-02-12|
