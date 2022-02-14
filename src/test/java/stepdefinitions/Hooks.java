@@ -8,9 +8,18 @@ import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
 public class Hooks {
+
+    // Cucumber'da feature ve stepdefinition eslesmesi class seviyesinde degil
+    // package seviyesindedir
+    // dolayisiyla @Before ve @After stepdefinitions package'i altinda herhangi bir yerde olabilir
+    // ancak uygulamada genellikle Hooks isminde bir class olusturup onun
+    // icine konulur
+
     @Before
     public void setUp(){
+
     }
+
     @After
     public void tearDown(Scenario scenario){
         final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
@@ -19,4 +28,5 @@ public class Hooks {
         }
         Driver.closeDriver();
     }
+
 }

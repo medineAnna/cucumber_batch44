@@ -33,6 +33,7 @@ public class WebUniversityStepDefinitions {
     }
     @Then("{string} ve  {string} kutularina deger yazdirin")
     public void ve_kutularina_deger_yazdirin(String username, String password) {
+        System.out.println(Driver.getDriver().getTitle());
         webUniversityPage.webUniversityUserNameBox.sendKeys(username);
         webUniversityPage.webUniversityPasswordBox.sendKeys(password);
 

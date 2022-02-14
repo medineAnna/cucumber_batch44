@@ -7,14 +7,15 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin={"html:target\\cucumber-reports.html"},
-        features = "src/test/resources/features",
+        features="src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@Hero",
+        tags="@WebU",
         dryRun = false
 )
+
 public class Runner {
-    //Runner class'in body'ne hic bir kod yazmiyoruz
-    //bu class icin onemli olan kullanacagimiz 2 adet notasyon yazacaguz
+    // Runner class'inin body'sine hic bir kod yazmiyoruz
+    // bu class icin onemli olan kullanacagimiz 2 adet notasyon
 
     // dryRun=false yazildiginda belirlenen tag'la etiketlenen tum scenario'lari sirasiyla calistirir
     // dryRun=true dedigimizde ise kodlari calistirmadan eksik stepler olup olmadigini kontrol eder
@@ -24,5 +25,4 @@ public class Runner {
     // tum klasor ve package'i sectik
     // dolayisiyla stepdefinitions package'i icerisinde hangi class'da olursa olsun
     // isimize yarayan bir stepdefition varsa rahatlikla kullanabiliriz
-
 }

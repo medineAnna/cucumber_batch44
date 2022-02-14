@@ -8,4 +8,5 @@ Feature: US1010 Herokupp sayfasinda add buttonu testi
     Then Delete butonu gorununceye kadar bekler
     And Delete butonunun gorundgunu test eder
     Then Delete butonuna basarak butonu siler
+  And 5 saniye bekler
     And sayfayi kapatir
