@@ -6,10 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin={"html:target\\cucumber-reports.html"},
+        plugin={"html:target\\cucumber-reports.html",
+                "json:target/json-reports/Pcucumber.json",
+                "junit:target/xml-report/cucumber.xml"},
         features="src/test/resources/features",
         glue = "stepdefinitions",
-        tags="@WebU",
+        tags="@Dinamik",
         dryRun = false
 )
 

@@ -1,6 +1,8 @@
-@WebU
-Feature: US1011 WebUniversity Window Handle
 
+
+
+Feature: US1011 WebUniversity Window Handle
+  @WebU
   Scenario Outline: TC16 Reusable Methods ile window Handle Testi
 
     Given kullanici "WebUniversityUrl" sayfasina gider
@@ -15,6 +17,7 @@ Feature: US1011 WebUniversity Window Handle
     Then Ok diyerek Popup'i kapatir
     And Ilk sayfaya geri doner
     And Ilk sayfaya donuldugunu test eder
+    And sayfayi kapatir
 
     Examples:
 
